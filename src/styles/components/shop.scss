@@ -1,0 +1,45 @@
+.book-section {
+  margin: 2rem 8rem;
+  .book-shop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    input,
+    select {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 150px;
+    }
+  }
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    button {
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      cursor: pointer;
+      margin: 0 5px;
+      &.active {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+      }
+    }
+  }
+}

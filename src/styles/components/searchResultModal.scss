@@ -1,0 +1,22 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-size: 2rem;
+      color: green;
+    }
+  }
+  &__section {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    &--text {
+      padding: 1rem;
+    }
+  }
+}

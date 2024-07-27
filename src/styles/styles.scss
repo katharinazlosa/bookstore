@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p,
+span,
+a,
+div,
+li,
+input,
+button {
+  font-weight: 400;
+}
+// //imports
+
+@import "./components/banner.scss";
+@import "./components/bannerShop.scss";
+@import "./components/benefits.scss";
+@import "./components/button.scss";
+@import "./components/companies.scss";
+@import "./components/footer.scss";
+@import "./components/header.scss";
+@import "./components/imgSlider.scss";
+@import "./components/login.scss";
+@import "./components/modal.scss";
+
+@import "./components/review.scss";
+@import "./components/reviewList.scss";
+@import "./components/shopItem.scss";
+@import "./components/shop.scss";
+
+@import "./components/searchInput.scss";
+@import "./components/searchResultModal.scss";
