@@ -5,6 +5,7 @@ import Modal from "./modal";
 
 const Header = () => {
   const [showLogin, setShowLogin] = useState(false);
+  const isLayout = location.pathname === "/";
 
   const handleLoginButtonClick = () => {
     setShowLogin(true);
@@ -20,18 +21,17 @@ const Header = () => {
   };
   return (
     <>
-      <div className="header-container">
-        <div className="header-container--left">
+      <div className={`header ${isLayout ? "layout-header" : "other-header"}`}>
+        <div className="header--left">
           <a href="/">Bookstore</a>
           <div className="link-container">
-            <a href="About">About</a>
-            <a href="Book">Book</a>
-            <a href="Popular">Popular</a>
-            <a href="Help">Help</a>
+            <a href="about">About</a>
+            <a href="popular">Popular</a>
+            <a href="help">Help</a>
           </div>
         </div>
 
-        <div className="header-container--right">
+        <div className="header--right ">
           <Button
             position="headerposition"
             text="Log in"

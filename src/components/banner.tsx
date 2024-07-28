@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SearchInput from "./searchInput";
 import SocialMediaIcons from "./socialMediaIcons";
 import bannerimg from "./../assets/img/banner-img.jpg";
-import Button from "./button";
 import Modal from "./modal";
 
 const socialMediaLinks = [
@@ -20,7 +19,7 @@ const Banner = () => {
 
   const handleSearch = (query: string) => {
     alert(`Searching for: ${query}`);
-    setShowSearchModal(false); // Optionally hide the search form after search
+    setShowSearchModal(false);
   };
 
   const handleCloseModal = () => {

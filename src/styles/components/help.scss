@@ -1,0 +1,40 @@
+.help-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .faq {
+    border-top: 1px solid #ddd;
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+}

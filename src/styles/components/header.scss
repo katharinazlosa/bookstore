@@ -1,9 +1,9 @@
-.header-container {
-  background: linear-gradient(to right, #037d50 50%, white 50%);
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 10vh;
   padding: 0 5rem;
 
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 48vw;
+    width: 50vw;
     color: white;
     padding: 0 2rem;
     a {
@@ -28,6 +28,20 @@
   &--right {
     display: flex;
     justify-content: flex-end;
-    width: 48vw;
+    width: 50vw;
+  }
+}
+
+.layout-header {
+  background: linear-gradient(to right, #037d50 50%, white 50%);
+}
+.other-header {
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+  .header--left {
+    a {
+      color: #037d50;
+    }
   }
 }

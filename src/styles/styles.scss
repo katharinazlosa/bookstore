@@ -27,6 +27,7 @@ button {
   font-weight: 400;
 }
 // //imports
+@import "./components/about.scss";
 
 @import "./components/banner.scss";
 @import "./components/bannerShop.scss";
@@ -35,9 +36,13 @@ button {
 @import "./components/companies.scss";
 @import "./components/footer.scss";
 @import "./components/header.scss";
+
+@import "./components/help.scss";
+
 @import "./components/imgSlider.scss";
 @import "./components/login.scss";
 @import "./components/modal.scss";
+@import "./components/popular.scss";
 
 @import "./components/review.scss";
 @import "./components/reviewList.scss";
