@@ -1,0 +1,41 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: linear-gradient(135deg, $color-primary-light, $color-accent);
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  &__content {
+    max-width: 600px;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: inline-block;
+    background: white;
+    color: #6a11cb;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+}

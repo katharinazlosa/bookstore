@@ -1,0 +1,48 @@
+.footer {
+  background-color: $color-primary-dark;
+  color: $color-text-light;
+  padding: $space-xl 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: $space-lg;
+    padding: 0 $space-lg;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  &__column {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+
+  &__title {
+    font-size: fluid-size(1.5rem, 2rem);
+    font-weight: 700;
+    margin-bottom: $space-md;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    margin: $space-sm 0;
+    text-decoration: none;
+    color: $color-text-light;
+
+    &:hover {
+      color: $color-accent;
+    }
+    &:focus {
+      outline: 2px solid $color-accent;
+      outline-offset: 3px;
+    }
+  }
+}

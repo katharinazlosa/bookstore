@@ -1,0 +1,120 @@
+@import "../utils/colors.scss";
+@import "../base/variables.scss";
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: $font-sans;
+  border-radius: $border-radius-md;
+  transition: $transition;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-sm $space-lg;
+  font-size: fluid-size(1rem, 1.125rem);
+  font-weight: 600;
+
+  &--header__right-button {
+    background: $color-accent;
+    color: $color-text-light;
+    box-shadow: $shadow-dark;
+    margin-left: $space-md;
+    padding: $space-md $space-lg;
+
+    &:hover {
+      background: $color-secondary;
+      color: $color-text-dark;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: $color-text-light;
+    }
+  }
+
+  &--banner {
+    background-color: $color-primary-dark;
+    color: $color-text-light;
+    padding: $space-md $space-xl;
+    font-size: fluid-size(1.2rem, 1.4rem);
+    box-shadow: $shadow-light;
+
+    &:hover {
+      background: $color-accent;
+    }
+  }
+
+  &--slider {
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+  }
+
+  &--close {
+    background-color: $color-accent;
+    color: white;
+    font-size: fluid-size(1.2rem, 1.4rem);
+    padding: 1rem;
+    border-radius: 2rem;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+  &--checkout {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &--clear {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+    &:hover {
+      background-color: $color-error;
+    }
+  }
+  &--cart {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+    background: linear-gradient(135deg, $color-primary-light, $color-accent);
+    color: $color-text-light;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        $color-primary,
+        $color-accent-dark
+      ); // Darker gradient on hover
+      transform: scale(1.05); // Slightly scale up the button
+    }
+
+    &:active {
+      transform: scale(1); // Reset scale when active
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// **imports** //
+
+//base
+@import "./base/global.scss";
+@import "./base/variables.scss";
+@import "./base/typography.scss";
+
+//components
+
+@import "./components/login.scss";
+@import "./components/reviews.scss";
+@import "./components/shopItem.scss";
+
+//layout
+@import "./layout/companies.scss";
+@import "./layout/banner.scss";
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+
+//utils
+@import "./utils/functions.scss";
+@import "./utils/mixins.scss";
+@import "./utils/colors.scss";
+
+//pages
+@import "./pages/shop.scss";
+@import "./pages/about.scss";
+@import "./pages/help.scss";
+@import "./pages/popular.scss";
+@import "./pages/shoppingcart.scss";
+@import "./pages/checkout.scss";
+
+//ui
+@import "./ui/modal.scss";
+@import "./ui/slider.scss";
+@import "./ui/button.scss";
+@import "./ui/hero.scss";

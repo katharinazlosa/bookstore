@@ -1,0 +1,20 @@
+:root {
+  font-size: 16px; // Default 1rem = 16px
+}
+
+// 4pt Grid Variables
+$unit: 0.25rem; // 4px = 0.25rem
+
+// Spacing (Multiples of 4)
+$space-xs: $unit; // 4px
+$space-sm: $unit * 2; // 8px
+$space-md: $unit * 3; // 12px
+$space-lg: $unit * 4; // 16px
+$space-xl: $unit * 8; // 32px
+$space-xxl: $unit * 9; // 36px
+
+//
+$border-radius-lg: 8px;
+$border-radius-md: 4px;
+$border-radius-sm: 2px;
+$transition: all 0.3s ease-in-out;

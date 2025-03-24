@@ -1,0 +1,39 @@
+.checkout {
+  padding: 20px;
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__summary {
+    background-color: $color-bg-light;
+    padding: 100px;
+    border-radius: 5px;
+  }
+  &__summary-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  &__items {
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    &-title {
+      font-weight: bold;
+    }
+    &-quantity,
+    &-price {
+      color: #555;
+    }
+  }
+  &__total {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}

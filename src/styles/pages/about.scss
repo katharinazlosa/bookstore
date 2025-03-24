@@ -1,0 +1,78 @@
+@import "../utils/colors.scss";
+@import "../base/variables.scss";
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-xxl;
+  text-align: left;
+  background: linear-gradient(135deg, $color-primary, $color-secondary);
+  color: $color-text-light;
+
+  &__container {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: fluid-size(2rem, 3.5rem);
+    font-weight: 700;
+    margin-bottom: $space-md;
+  }
+
+  &__subtitle {
+    font-size: fluid-size(1.2rem, 1.6rem);
+    margin-bottom: $space-lg;
+    color: rgba($color-text-light, 0.9);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xl;
+  }
+
+  &__section {
+    padding: $space-lg;
+    background: rgba($color-text-light, 0.1);
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-light;
+  }
+
+  &__section-title {
+    font-size: fluid-size(1.5rem, 2rem);
+    font-weight: 600;
+    margin-bottom: $space-md;
+  }
+
+  &__text {
+    font-size: fluid-size(1rem, 1.25rem);
+    line-height: 1.5;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+
+    &-item {
+      font-size: fluid-size(1rem, 1.2rem);
+      margin-bottom: $space-sm;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: $space-lg;
+    text-align: center;
+
+    &__container {
+      max-width: 100%;
+    }
+
+    &__section {
+      padding: $space-md;
+    }
+  }
+}

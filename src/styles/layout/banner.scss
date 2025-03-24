@@ -1,0 +1,60 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: $color-accent;
+
+  &__left {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: $color-text-dark;
+    margin-top: 10px;
+  }
+
+  &__follow-text {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: $color-text-dark;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  &__right {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    &__left {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__right {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

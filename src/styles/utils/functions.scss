@@ -1,0 +1,3 @@
+@function fluid-size($min, $max) {
+  @return clamp(#{$min}rem, 2vw, #{$max}rem);
+}

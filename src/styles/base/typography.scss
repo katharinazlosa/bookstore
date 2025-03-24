@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap");
+@import "../utils/colors.scss";
+
+// Font Families
+$font-serif: "Merriweather", serif;
+$font-sans: "Poppins", sans-serif;
+
+body {
+  font-family: $font-sans;
+  background-color: $color-bg-light;
+  color: $color-text-dark;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-serif;
+  font-weight: 700;
+  color: $color-primary-dark;
+}
+
+p,
+span,
+a {
+  font-family: $font-sans;
+}

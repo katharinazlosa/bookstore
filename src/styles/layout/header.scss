@@ -1,0 +1,116 @@
+@import "../utils/colors";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12vh;
+  padding: 0 $space-xxl;
+  color: $color-text-light;
+  box-shadow: $shadow-light;
+
+  &--layout {
+    background: $color-primary-dark;
+  }
+
+  &--other {
+    background-color: $color-bg-light;
+    box-shadow: $shadow-light;
+
+    .header__left {
+      a {
+        color: $color-primary-dark;
+      }
+    }
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $space-lg;
+    a {
+      font-size: fluid-size(2, 2.25);
+      color: $color-text-light;
+      text-decoration: none;
+      padding: $space-sm $space-md;
+      transition: $transition;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+  &__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: $space-lg;
+
+    &-link {
+      cursor: pointer;
+      font-size: fluid-size(1, 1.25);
+      font-weight: 500;
+      color: $color-text-light;
+      text-decoration: none;
+      transition: $transition;
+
+      &:hover {
+        color: $color-accent;
+        transform: translateY(-2px);
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    gap: $space-lg;
+  }
+  &__cart {
+    font-weight: bold;
+    color: $color-primary;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius-md;
+    background-color: $color-bg-light;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: $color-accent;
+      color: $color-text-light;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: $space-lg;
+
+    &__left,
+    &__right {
+      flex-direction: column;
+      align-items: center;
+      gap: $space-md;
+    }
+
+    &__nav {
+      flex-direction: column;
+      text-align: center;
+      gap: $space-sm;
+    }
+  }
+}

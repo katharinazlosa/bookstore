@@ -1,0 +1,43 @@
+.companies {
+  padding: 2rem 0;
+  background-color: $color-bg-light;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $color-primary;
+    margin-bottom: 1.5rem;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    &__logos {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__logo img {
+      max-width: 120px;
+    }
+  }
+}
