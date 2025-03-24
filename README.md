@@ -52,7 +52,7 @@ npm (or yarn)
 
 Steps to Install
 Clone the repository:
-git clone https://github.com/your-username/bookstore-webapp.git
+git clone (https://github.com/katharinazlosa/bookstore)
 
 Navigate to the project directory:
 cd bookstore-webapp
