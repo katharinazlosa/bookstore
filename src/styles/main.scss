@@ -5,17 +5,12 @@
 @import "./base/variables.scss";
 @import "./base/typography.scss";
 
-//components
-
-@import "./components/login.scss";
-@import "./components/reviews.scss";
-@import "./components/shopItem.scss";
-
 //layout
 @import "./layout/companies.scss";
 @import "./layout/banner.scss";
 @import "./layout/footer.scss";
 @import "./layout/header.scss";
+@import "./layout/hero.scss";
 
 //utils
 @import "./utils/functions.scss";
@@ -31,7 +26,9 @@
 @import "./pages/checkout.scss";
 
 //ui
+@import "./ui/login.scss";
+@import "./ui/reviews.scss";
+@import "./ui/shopItem.scss";
 @import "./ui/modal.scss";
 @import "./ui/slider.scss";
 @import "./ui/button.scss";
-@import "./ui/hero.scss";
